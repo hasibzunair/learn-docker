@@ -1,0 +1,4 @@
+Flask-Cors==3.0.9
+flask~=1.1.2
+gunicorn~=20.0.4
+markupsafe==2.0.1

@@ -5,7 +5,7 @@ Serves a dockerized deep learning image classification model using FastAPI.
 <p align="center">
   <a href="#"><img src="./test1.jpeg"/></a> <br />
   <em> 
-    Prediction from model: ```king penguin: 0.9999```
+    Prediction from model: `king penguin: 0.9999`.
     </em>
 </p>
 

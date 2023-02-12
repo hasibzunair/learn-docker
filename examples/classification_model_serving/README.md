@@ -3,10 +3,10 @@
 Serves a dockerized deep learning image classification model using FastAPI.
 
 <p align="center">
-  <a href="#"><img src="./test1.jpeg" width="100"></a> <br />
+  <a href="#"><img src="./test1.jpeg" width="300"></a> <br />
   <em> 
-    **Model prediction**: `king penguin: 0.9999`.
-    </em>
+    Model Output: `king penguin: 0.9999`.
+  </em>
 </p>
 
 ### Local development

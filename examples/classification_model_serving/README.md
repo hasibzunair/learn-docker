@@ -74,7 +74,7 @@ $ curl -X POST -F image=@YOUR_IMG_PATH "http://127.0.0.1:8000/api/predict"
 To build and run this app as a docker container. Run:
 ```
 docker build -t classification_model_serving .
-docker run -p 5001:8000 classification_model_serving
+docker run -p 8000:5000 classification_model_serving
 ```
 
 ### References

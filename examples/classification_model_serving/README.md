@@ -1,6 +1,6 @@
-# Image classificatio API
+# Image classification API
 
-Serves a deep learning based image classification model using a REST API endpoint.
+Serves a dockerized deep learning based image classification model using a REST API endpoint.
 
 ### Local development
 To use this code for local development, first clone the repo. Then navigate to the project folder and install the requirements using (make sure Python version is 3.6):
@@ -11,12 +11,12 @@ Now, you're setup!
 
 ### Usage
 
-To launch the API server run:
+To launch the API server, run:
 ```python
 python server.py
 ```
 
-A fastapi app will run on your local machine. See Swagger UI at `http://127.0.0.1:8000/docs` for more info.
+A `fastapi` app will run on your local machine. See Swagger UI at `http://127.0.0.1:8000/docs` for more info.
 To interact with it, open a new terminal and just send a curl request like this (make sure you are in the project folder):
 ```bash
 $ curl -X POST -F image=@test1.jpeg "http://127.0.0.1:8000/api/predict"
@@ -71,11 +71,16 @@ $ curl -X POST -F image=@YOUR_IMG_PATH "http://127.0.0.1:8000/api/predict"
 ```
 
 ### Docker
-To build and run this app as a container. Run:
+To build and run this app as a docker container. Run:
 ```
 docker build -t classification_model_serving .
-docker run -p 5000:8000 classification_model_serving
+docker run -p 5001:8000 classification_model_serving
 ```
+
+### References
+- https://github.com/hasibzunair/adversarial-lesions-rest-api-demo/blob/main/requirements.txt
+- https://github.com/hzunair/dockka
+- https://github.com/hzunair/deepdock
 
 ### License
 MIT

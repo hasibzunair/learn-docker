@@ -2,6 +2,13 @@
 
 Serves a dockerized deep learning image classification model using FastAPI.
 
+<p align="center">
+  <a href="#"><img src="./test1.jpeg"/></a> <br />
+  <em> 
+    Prediction from model: ```king penguin: 0.9999```
+    </em>
+</p>
+
 ### Local development
 To use this code for local development, first clone the repo. Then navigate to the project folder `classification_model_serving` and install the requirements using (make sure Python version is 3.6):
 ```bash
@@ -84,6 +91,7 @@ Finally, run `curl -X POST -F image=@test1.jpeg "http://0.0.0.0:80/api/predict"`
 
 ### Todo
 * docker image to registry, pull and test
+* run gradio frontend as docker container, link with fastapi container
 * link with another container
 
 ### License

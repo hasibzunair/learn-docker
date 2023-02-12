@@ -82,5 +82,9 @@ docker run --publish 80:80 --name cls-serve classification_model_serving
 
 Finally, run `curl -X POST -F image=@test1.jpeg "http://0.0.0.0:80/api/predict"` in your terminal. You should get the same JSON response as above.
 
+### Todo
+* docker image to registry, pull and test
+* link with another container
+
 ### License
 MIT

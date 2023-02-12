@@ -40,7 +40,7 @@ Need to remove container before removing image
 
 ### Run Ubuntu and see what’s inside.
 ```
-# Run an instance of ubuntu in background
+#Run an instance of ubuntu in background
 docker run -d ubuntu sleep 100
 # Will be excited state, container lives long as the process is there
 docker ps -a 

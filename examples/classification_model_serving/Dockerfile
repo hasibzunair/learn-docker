@@ -8,7 +8,10 @@ COPY ./requirements.txt /app/requirements.txt
 WORKDIR /app
 
 # Install any needed packages specified in requirements.txt
-RUN pip install --trusted-host pypi.python.org -r requirements.txt
+RUN pip install -r requirements.txt
+
+# copy every content from the local file to the image
+COPY . /app
 
 # Configure the container to run in an executed manner
 ENTRYPOINT [ "python" ]

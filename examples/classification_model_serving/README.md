@@ -71,16 +71,16 @@ $ curl -X POST -F image=@YOUR_IMG_PATH "http://127.0.0.1:8000/api/predict"
 ```
 
 ### Docker
+
 To build and run this app as a docker container. Run:
 ```
+# build
 docker build -t classification_model_serving .
-docker run -p 8000:5000 classification_model_serving
+# run
+docker run --publish 80:80 --name cls-serve classification_model_serving
 ```
 
-### References
-- https://github.com/hasibzunair/adversarial-lesions-rest-api-demo/blob/main/requirements.txt
-- https://github.com/hzunair/dockka
-- https://github.com/hzunair/deepdock
+Finally, run `curl -X POST -F image=@test1.jpeg "http://0.0.0.0:80/api/predict"` in your terminal. You should get the same `json` response as above.
 
 ### License
 MIT

@@ -20,6 +20,10 @@ def model():
     # Load model once
     model = get_prediction_model()
 
+@app.get("/")
+def read_root():
+    return {"hello": "world"}
+
 @app.post("/api/predict")
 async def predict_image(image: bytes = File(...)):
     # Read image
@@ -32,7 +36,7 @@ async def predict_image(image: bytes = File(...)):
     return predictions
 
 if __name__ == "__main__":
-    uvicorn.run(app, port=8000, debug=True)
+    uvicorn.run(app, debug=True)
     print("Running server.")
     # See 127.0.0.1:8000/docs for more info.
     # ENDPOINT_URL is http://127.0.0.1:8000/api/predict

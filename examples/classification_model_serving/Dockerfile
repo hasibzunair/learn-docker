@@ -11,9 +11,7 @@ WORKDIR /app
 RUN pip install -r requirements.txt
 
 # Copy every content from the local folder to the image
-COPY . /app
+COPY . .
 
-# Configure the container to run in an executed manner
-ENTRYPOINT [ "python" ]
-
-CMD ["server.py"]
+# Run server
+CMD ["uvicorn", "main:app", "--host=0.0.0.0", "--port=80"]

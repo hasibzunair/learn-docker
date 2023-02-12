@@ -25,7 +25,7 @@ $ curl -X POST -F image=@test1.jpeg "http://127.0.0.1:8000/api/predict"
 Using the `test1.jpeg` image, the JSON response result should look like this, with labels and the probability values for the given image:
 ```json
 {
-  "success": True, 
+  "success": true, 
   "predictions": 
   [
     {

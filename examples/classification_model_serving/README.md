@@ -2,8 +2,8 @@
 
 Serves a dockerized deep learning image classification model using FastAPI.
 
-<p align="center">
-  <a href="#"><img src="./test1.jpeg" width="300"></a> <br />
+<p align="left">
+  <a href="#"><img src="./test1.jpeg" width="200"></a> <br />
   <em> 
     Model Output: `king penguin: 0.9999`.
   </em>

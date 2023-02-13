@@ -87,12 +87,23 @@ docker build -t classification_model_serving .
 docker run --publish 80:80 --name cls-serve classification_model_serving
 ```
 
-Finally, run `curl -X POST -F image=@test1.jpeg "http://0.0.0.0:80/api/predict"` in your terminal. You should get the same JSON response as above.
+Now, the model is deployed as an API endpoint in your local machine. Finally, run `curl -X POST -F image=@test1.jpeg "http://0.0.0.0:80/api/predict"` in your terminal. You should get the same JSON response as above.
+
+
+#### Test image from Docker Hub
+```
+# build
+docker build . -t hasibzunair/classification_model_serving
+# push to dockerhub
+docker push hasibzunair/classification_model_serving
+# test image
+docker run --publish 80:80 --name cls-serve hasibzunair/classification_model_serving
+```
 
 ### Todo
-* docker image to registry, pull and test
 * run gradio frontend as docker container, link with fastapi container
 * link with another container
+* google cloud run
 
 ### License
 MIT

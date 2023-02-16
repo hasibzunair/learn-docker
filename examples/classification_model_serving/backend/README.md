@@ -1,4 +1,4 @@
-# Serving image classification models
+# Backend: serving image classification model
 
 Serves a dockerized deep learning image classification model using FastAPI.
 
@@ -101,8 +101,6 @@ docker run --publish 80:80 --name cls-serve hasibzunair/classification_model_ser
 ```
 
 ### Todo
-* run gradio frontend as docker container, link with fastapi container
-* link with another container
 * google cloud run
 
 ### License

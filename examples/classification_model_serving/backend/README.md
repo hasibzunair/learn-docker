@@ -94,6 +94,8 @@ Now, the model is deployed as an API endpoint in your local machine. Finally, ru
 ```
 # build
 docker build . -t hasibzunair/classification_model_serving
+# or tag existing image
+docker tag classification_model_serving:latest hasibzunair/classification_model_serving:latest
 # push to dockerhub
 docker push hasibzunair/classification_model_serving
 # test image

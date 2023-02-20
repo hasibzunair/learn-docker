@@ -8,7 +8,7 @@ pip install -r requirements.txt
 ```
 Now, you're setup!
 
-### Usage
+#### Usage
 To see predictions in a simple frontend UI, run: 
 ```
 # run backend

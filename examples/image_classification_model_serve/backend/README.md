@@ -8,7 +8,7 @@ pip install -r requirements.txt
 ```
 Now, you're setup!
 
-### Usage
+#### Usage
 To launch the FastAPI application locally, run:
 ```python
 python main.py

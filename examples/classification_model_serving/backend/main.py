@@ -11,7 +11,7 @@ from predictor import read_image, preprocess, get_prediction_model, predict
 if not os.path.exists("./imagenet_classes.txt"):
     os.system("wget https://raw.githubusercontent.com/pytorch/hub/master/imagenet_classes.txt")
 
-app = FastAPI(title="General Image Classification API", description="API for image classification using deep learning.", version="1.0")
+app = FastAPI(title="Image Classification API", description="API for image classification using deep learning.", version="1.0")
 model = None
 
 @app.on_event("startup")

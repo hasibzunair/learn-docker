@@ -1,30 +1,20 @@
-# Backend: serving image classification model
-
+# FastAPI + PyTorch Backend
 Serves a dockerized deep learning image classification model using FastAPI.
 
-<p align="left">
-  <a href="#"><img src="./test1.jpeg" width="200"></a> <br />
-  <em> 
-    Model Output: `king penguin: 0.9999`.
-  </em>
-</p>
-
 ### Local development
-To use this code for local development, first clone the repo. Then navigate to the project folder `classification_model_serving` and install the requirements using (make sure Python version is 3.6):
+To use this code for local development, install the requirements using (make sure Python version is 3.6):
 ```bash
 pip install -r requirements.txt
 ```
 Now, you're setup!
 
 ### Usage
-
-To launch the FastAPI application, run:
+To launch the FastAPI application locally, run:
 ```python
 python server.py
 ```
 
-A FastAPI application will run on your local machine. See Swagger UI at `http://127.0.0.1:8000/docs` for more info.
-To interact with it, open a new terminal and just send a curl request like this:
+A FastAPI application will run on your local machine. See Swagger UI at `http://127.0.0.1:8000/docs` for more info. To interact with it, open a new terminal and just send a curl request like this:
 ```bash
 $ curl -X POST -F image=@test1.jpeg "http://127.0.0.1:8000/api/predict"
 ```
@@ -89,21 +79,15 @@ docker run --publish 80:80 --name cls-serve classification_model_serving
 
 Now, the model is deployed as an API endpoint in your local machine. Finally, run `curl -X POST -F image=@test1.jpeg "http://0.0.0.0:80/api/predict"` in your terminal. You should get the same JSON response as above.
 
-
 #### Test image from Docker Hub
 ```
-# build
-docker build . -t hasibzunair/classification_model_serving
-# or tag existing image
-docker tag classification_model_serving:latest hasibzunair/classification_model_serving:latest
-# push to dockerhub
+# tag
+docker tag classification_model_serving hasibzunair/classification_model_serving
+# push
 docker push hasibzunair/classification_model_serving
-# test image
+# test image from hub
 docker run -p 8000:80 --name cls-serve hasibzunair/classification_model_serving
 ```
 
 ### Todo
-* google cloud run
-
-### License
-MIT
+* Google Cloud Run

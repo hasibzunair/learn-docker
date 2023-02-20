@@ -13,8 +13,7 @@ recognizes what object is present in the given image. It demonstrates use-cases 
 
 ### Usage
 
-To launch this application, run:
-
+For details on `frontend` and `backend` components were built, see respective folders. To launch the app, run:
 ```
 # run backend
 docker run -p 8000:80 --name cls-serve hasibzunair/classification_model_serving
@@ -26,3 +25,7 @@ Now, open the app using `http://0.0.0.0:7860` and drop your images to make a pre
 
 ### Note
 I did this project after completing (Docker for the Absolute Beginner - Hands On - DevOps)[https://www.udemy.com/course/learn-docker/].
+
+#### Todos
+* Google cloud run
+* Docker compose

@@ -88,6 +88,3 @@ docker push hasibzunair/classification_model_serving
 # test image from hub
 docker run -p 8000:80 --name cls-serve hasibzunair/classification_model_serving
 ```
-
-### Todo
-* Google Cloud Run

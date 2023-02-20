@@ -26,6 +26,7 @@ docker build -t frontend_serving .
 # run container
 docker run -p 7860:7860 --add-host host.docker.internal:host-gateway --name frnt-serve frontend_serving
 ```
+Now, the app is live in `http://0.0.0.0:7860`. Drop your images to make a prediction, or simply use the examples!
 
 #### Test image from Docker Hub
 ```

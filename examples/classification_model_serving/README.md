@@ -4,7 +4,7 @@ This demo application deploys a deep learning image classification model that
 recognizes what object is present in the given image. It demonstrates use-cases of different tools such as `PyTorch`, `FastAPI`, `Gradio` and `Docker`.
 
 <p align="left">
-  <a href="#"><img src="./test1.jpeg" width="200"></a> <br />
+  <a href="#"><img src="./frontend/test1.jpeg" width="200"></a> <br />
   <em> 
     Model Output: `king penguin: 0.9999`.
   </em>

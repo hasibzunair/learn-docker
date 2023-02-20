@@ -99,7 +99,7 @@ docker tag classification_model_serving:latest hasibzunair/classification_model_
 # push to dockerhub
 docker push hasibzunair/classification_model_serving
 # test image
-docker run --publish 80:80 --name cls-serve hasibzunair/classification_model_serving
+docker run -p 8000:80 --name cls-serve hasibzunair/classification_model_serving
 ```
 
 ### Todo

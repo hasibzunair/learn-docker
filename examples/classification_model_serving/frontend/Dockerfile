@@ -10,9 +10,6 @@ WORKDIR /app
 # Install any needed packages specified in requirements.txt
 RUN pip install -r requirements.txt
 
-# Listen outside
-EXPOSE 7860
-
 # Copy every content from the local folder to the image
 COPY . .
 

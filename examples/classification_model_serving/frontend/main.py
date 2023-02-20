@@ -2,8 +2,10 @@ import gradio as gr
 import requests
 
 # Set URL
-# Run: docker run --publish 80:80 --name cls-serve hasibzunair/classification_model_serving
-REST_API_URL = "http://0.0.0.0:80/api/predict"
+# Run: 
+# docker run -p 8000:80 --name cls-serve hasibzunair/classification_model_serving
+# url: http://0.0.0.0:8000/api/predict
+REST_API_URL = "http://0.0.0.0:8000/api/predict"
 
 # Inference!
 def inference(image_path):
@@ -47,7 +49,7 @@ frontend = gr.Interface(inference,
             analytics_enabled=False)
 
 # Launch app and set PORT
-frontend.launch(server_name="0.0.0.0", server_port=7860)
+frontend.launch(server_name="127.0.0.1", server_port=7860)
 
 
 

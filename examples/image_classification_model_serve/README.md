@@ -24,7 +24,7 @@ docker run -p 7860:7860 --add-host host.docker.internal:host-gateway --name frnt
 Now, open the app using `http://0.0.0.0:7860` and drop your images to make a prediction, or simply use the examples!
 
 ### Note
-I did this project after completing (Docker for the Absolute Beginner - Hands On - DevOps)[https://www.udemy.com/course/learn-docker/].
+I did this project after completing [Docker for the Absolute Beginner - Hands On - DevOps](https://www.udemy.com/course/learn-docker/).
 
 #### Todos
 * Google cloud run

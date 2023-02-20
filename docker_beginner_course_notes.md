@@ -1,6 +1,7 @@
 ### Docker for the Absolute Beginner - Hands On - DevOps Notes
 
-Course Link: https://concordia.udemy.com/course/learn-docker/learn/lecture/7894186#overview
+Course Link: https://concordia.udemy.com/course/learn-docker/learn/lecture/7894186#overview, this link is for Concordia students. See general link at 
+[Docker for the Absolute Beginner - Hands On - DevOps](https://www.udemy.com/course/learn-docker/).
 
 ## Some doocker commands:
 

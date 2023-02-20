@@ -37,3 +37,5 @@ docker push hasibzunair/frontend_serving
 # run frontend from hub
 docker run -p 7860:7860 --add-host host.docker.internal:host-gateway --name frnt-serve hasibzunair/frontend_serving
 ```
+
+Again, the app should be live at `http://0.0.0.0:7860`.

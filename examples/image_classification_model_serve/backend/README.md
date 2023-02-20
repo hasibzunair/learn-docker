@@ -88,3 +88,5 @@ docker push hasibzunair/classification_model_serving
 # run backend from hub
 docker run -p 8000:80 --name cls-serve hasibzunair/classification_model_serving
 ```
+
+Should be able to run `curl -X POST -F image=@test1.jpeg "http://0.0.0.0:8000/api/predict"` and get predictions.

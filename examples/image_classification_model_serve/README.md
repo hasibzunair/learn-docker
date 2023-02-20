@@ -1,6 +1,6 @@
 # CompVis Platter
 
-This demo application deploys a deep learning image classification model as an API endpoint that 
+This application deploys a deep learning image classification model as an API endpoint that 
 recognizes what object is present in an image. It also shows results in a simple frontend UI. It demonstrates use-cases of different tools such as `PyTorch`, `FastAPI`, `Gradio` and `Docker`.
 
 <p align="left">

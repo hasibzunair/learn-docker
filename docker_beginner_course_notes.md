@@ -49,6 +49,9 @@ docker exec container_id cat /etc/*release*
 ```
 
 #### Port mapping, 80 is outside host port and 5000 is docker container port.
+
+Host port : docker port
+
 ```
 docker run -p 80:5000 kodekloud/webapp 
 docker run -p 81:5000 kodekloud/webapp 

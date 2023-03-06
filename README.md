@@ -1,9 +1,9 @@
 # Learn Docker
 
-Code I wrote while learning docker, mostly for my reference.
+Code I wrote while learning docker, mostly for my reference. 
 
 Projects
-* https://github.com/hasibzunair/learn-docker/tree/main/examples/image_classification_model_serve
+* https://github.com/hasibzunair/imagercg-waiter
 
 Some helpful resources
 1. https://blog.logrocket.com/build-deploy-flask-app-using-docker/
